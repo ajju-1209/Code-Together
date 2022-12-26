@@ -4,11 +4,11 @@ const Home = () => {
   return (
     <div className='homePageWrapper'>
       <div className='formWrapper'>
-        < h4 className='mainLabel'>Paste invitation ROOM ID</h4>
+        <h4 className='mainLabel'>Paste invitation ROOM ID</h4>
         <div className='inputGroup'>
           <input
             type="text"
-            clasName='inputBox'
+            className='inputBox'
             placeholder="ROOM ID"
             />
             <input
