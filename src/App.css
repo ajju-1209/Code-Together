@@ -52,6 +52,7 @@ footer a{
   font-size: 16px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  font-weight: bold;
 }
 
 .joinBtn,
@@ -126,4 +127,11 @@ footer a{
 .leaveBtn{
   margin-top: 20px;
   width: 100%;
+}
+
+.CodeMirror{
+  min-height: 100vh;
+  line-height:1.6 ;
+  font-size: 20px;
+  padding-top: 20px;
 }
