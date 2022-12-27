@@ -54,13 +54,14 @@ footer a{
   transition: all 0.3s ease-in-out;
 }
 
-.joinBtn{
+.joinBtn,
+  .leaveBtn{
   background: #4aed88;
   width: 100px;
   margin-left: auto;
 }
 
-.joinBtn:hover{
+.joinBtn:hover , .leaveBtn:hover{
   background: #2b824c;
 }
 
@@ -80,4 +81,49 @@ footer a{
   footer a:hover{
     color:#368654;
     border-color: #368654;
+}
+
+.mainWrap{
+  display: grid;
+  grid-template-columns: 230px 1fr;
+}
+
+.aside{
+  background: #1c1e29;
+  padding: 16px;
+  display: flex;
+  color: #fff;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.asideInner{
+  flex:1;
+}
+
+.clientsList{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.client{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.userName{
+  margin-top: 10px;
+}
+
+.logo{
+  border-bottom: 1px solid #424242; 
+}
+
+.leaveBtn{
+  margin-top: 20px;
+  width: 100%;
 }
