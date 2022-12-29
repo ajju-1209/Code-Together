@@ -26,7 +26,7 @@ const Home = () => {
     }
 
     //Redirect if both username and room id are entered
-    navigate('/editor/${roomId}',{
+    navigate(`/editor/${roomId}`,{
       state:{
         username
       },
