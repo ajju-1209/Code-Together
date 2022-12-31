@@ -2,6 +2,7 @@ const express = require('express');
 const app=express();
 
 const http=require('http');
+const path = require('path');
 
 
 //requiring Server class
@@ -16,7 +17,10 @@ const server=http.createServer(app);
 //creating instance of Server class to use its methods and attributes
 const io=new Server(server);
 
-
+app.use(express.static('build'));
+app.use((req,res,next)=>{
+  res.sendFile(path.join(__dirname,'build','index.html'));
+});
 //object to store user along with there socket id
 const userSocketMap={};
 
